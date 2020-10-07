@@ -1,8 +1,8 @@
 # Dico québécois 
 
 Ce dépôt contient pour l'instant : 
-- Un export dans la bdd, avec les termes, les exemples et les catégories
-- Les entités correspondantes
+- Un export de la bdd, avec les termes, les exemples et les catégories
+- Les entités correspondantes, et leur Repository
 
 ### Installation 
 
