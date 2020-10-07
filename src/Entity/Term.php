@@ -6,6 +6,7 @@ use App\Repository\TermRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as Serializer;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
@@ -15,6 +16,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 class Term
 {
     /**
+     * @Serializer\Groups({"list"})
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
@@ -27,6 +29,7 @@ class Term
     private $slug;
 
     /**
+     * @Serializer\Groups({"list"})
      * @ORM\Column(type="string", length=255)
      */
     private $term;
